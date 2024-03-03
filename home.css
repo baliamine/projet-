@@ -1,0 +1,80 @@
+body {
+  background-image: url("../Projet_Web/img/back1.jpg"); /* Chemin vers votre image */
+  background-size: cover; /* Pour s'assurer que l'image couvre tout l'arrière-plan */
+}
+.titre {
+  /* margin-left: 300px; */
+  margin-top: 200px;
+  margin-left: 130px;
+  text-decoration: overline;
+  width: min-content;
+  font-size: 70px;
+}
+.titre:hover {
+  cursor: pointer;
+}
+.logo {
+  display: block;
+  width:600px;
+  margin-left: 50px;
+  margin-top: 150px;
+  /* height: 500px; */
+  filter: brightness(0.5);
+}
+
+.container_home {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.sous_containe{
+  text-align: center;
+  margin-left: 110px;
+  margin-top:-55px;
+  font-family: "Roboto", sans-serif;
+}
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  border: 2px solid slateblue;
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color:#6420AA;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color:white;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button:active {
+  scale: 1;
+}
+
+

@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 90%;
+  height: 35px;
+  border-style: inset;
+  margin-left: 60px;
+  top: 0;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  font-size: larger;
+  color: white;
+  padding-top: 3px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+a:hover {
+  cursor: pointer;
+  background-color:beige;
+  color:black;
+}
